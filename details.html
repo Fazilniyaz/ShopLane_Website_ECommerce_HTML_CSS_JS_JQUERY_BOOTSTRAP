@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - ShopLane</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./details.css" />
+  </head>
+  <body>
+    <header id="header">
+      <span id="head1">SHOP<span id="head2">LANE</span></span>
+      <a href="#cloth">CLOTHING</a>
+      <a href="#Access">ACCESSORIES</a>
+      <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+      <input id="dummy" type="text" placeholder="Search your product here" />
+      <a href="./cart.html"
+        ><i id="icon2" class="fa-sharp fa-solid fa-cart-shopping fa-2x"
+          ><div id="count"><p id="counter">0</p></div></i
+        ></a
+      >
+      <img
+        id="userimg"
+        src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg"
+        alt=""
+        height="50"
+        width="50"
+      />
+    </header>
+
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image1 mb-4 text-center">
+            <img
+              id="displayimg"
+              src=""
+              alt=""
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div id="prev" class="d-flex justify-content-between mb-4">
+            <!-- Preview images will be injected here -->
+          </div>
+        </div>
+        <div class="col-md-6 Desc">
+          <div class="others">
+            <h2 id="innerhead" class="mb-3"></h2>
+            <h5 id="brand" class="text-muted mb-4"></h5>
+            <h3 id="price" class="text-primary mb-4"></h3>
+            <div class="description mb-4">
+              <h4>Description:</h4>
+              <p id="description" class="font-weight-medium"></p>
+            </div>
+            <button id="addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./details.js"></script>
+  </body>
+</html>
